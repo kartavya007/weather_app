@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://unpkg.com/tailwindcss@1.9.6/dist/tailwind.min.css" rel="stylesheet">
+</head>
+<body class="h-screen overflow-hidden flex items-center justify-center" style="background: #edf2f7;">
+    <div class="min-h-screen flex items-center justify-center">
+<div class="flex flex-col bg-white rounded p-4 w-full max-w-xs">
+						<div class="font-bold text-xl"> <form action="/" method="post"><input type="text" value = "{{data["location"]["name"]}}" name = "city"> <button type="submit"> <img src="https://img.icons8.com/ios/256/search-more.png" style="width:1vw; height:2vh;  "> </button>  </form></div>
+						<div class="flex flex-col items-center ml-6">
+							<div>{{data["location"]["region"]}} , {{data["location"]["country"]}} </div>
+						</div>
+						<div class="text-sm text-gray-500">{{data["location"]["locattime"]}}</div>
+						<div class="mt-6 text-6xl self-center inline-flex items-center justify-center rounded-lg text-indigo-400 h-24 w-24">
+							<img src="https:{{data["current"]["condition"]["icon"]}}" alt="">
+						</div>
+						<div class="flex flex-row items-center justify-center mt-6">
+							<div class="font-medium text-6xl">{{data["current"]["temp_c"]}}</div>
+							<div class="flex flex-col items-center ml-6">
+								<div>{{data["current"]["condition"]["text"]}}</div>
+							</div>
+						</div>
+						<div class="flex flex-row justify-between mt-6">
+							<div class="flex flex-col items-center">
+								<div class="font-medium text-sm">Wind</div>
+								<div class="text-sm text-gray-500">{{data["current"]["wind_kph"]}}kph</div>
+							</div>
+							<div class="flex flex-col items-center">
+								<div class="font-medium text-sm">Humidity</div>
+								<div class="text-sm text-gray-500">{{data["current"]["humidity"]}}%</div>
+							</div>
+							<div class="flex flex-col items-center">
+								<div class="font-medium text-sm">Visibility</div>
+								<div class="text-sm text-gray-500">{{data["current"]["vis_km"]}}km</div>
+							</div>
+						</div>
+					</div>
+</div>
+</body>
+</html>

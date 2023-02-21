@@ -1,0 +1,33 @@
+city name = London
+country name = United Kingdom
+latitude = 51.52
+longitude = -0.11
+Time = 2023-02-20 17:51
+temprature = 11.0C\51.8F
+wind (mph) = 8.1
+Humidity = 82
+cloud = 75
+feelslike = 9.2C\48.6F
+---------------------------********-------------------------------------
+city name = New Delhi
+country name = India
+latitude = 28.6
+longitude = 77.2
+Time = 2023-02-20 23:22
+temprature = 21.0C\69.8F
+wind (mph) = 3.8
+Humidity = 69
+cloud = 25
+feelslike = 21.0C\69.8F
+---------------------------********-------------------------------------
+city name = Farrukhabad
+country name = India
+latitude = 27.4
+longitude = 79.57
+Time = 2023-02-20 23:23
+temprature = 21.6C\70.9F
+wind (mph) = 2.2
+Humidity = 32
+cloud = 6
+feelslike = 21.6C\70.9F
+---------------------------********-------------------------------------
